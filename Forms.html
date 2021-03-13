@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="backend.php">
+      <div>My Name: <input name="naming" /></div>
+      <br />
+      <label for="name">Name</label>
+      <div><input type="text" name="myname" id="name" /></div>
+      <br />
+      <label for="myrole">Role</label>
+      <div><input type="text" name="myrole" id="myrole" /></div>
+      <br />
+      <div>Email: <input type="email" name="" id="" /></div>
+      <br />
+      <div>Date: <input type="date" name="Date" id="" /></div>
+      <br />
+      <div>Bonus: <input type="number" name="mynumber" id="" /></div>
+      <br />
+      <div>
+        Are you Eligible? <input type="checkbox" name="select" id="" checked />
+      </div>
+      <div>
+        Gender: Male <input type="radio" name="myradio" id="" checked /> Female
+        <input type="radio" name="myradio" id="" /> Others
+        <input type="radio" name="myradio" id="" />
+      </div>
+      <div>
+        Description:<br />
+        <textarea name="mytext" col="50" rows="10"></textarea>
+      </div>
+      <div>
+        <div>
+          <label for="car">Car Model</label>
+          <select name="mycar" id="car">
+            <option value="ind">Indica</option>
+            <option value="hyn" selected>Hundya</option>
+            <option value="sft">Swift</option>
+          </select>
+        </div>
+        <br />
+        <input type="submit" value="SubmitNow" />
+        <input type="reset" value="ResetNow" />
+      </div>
+    </form>
+  </body>
+</html>
