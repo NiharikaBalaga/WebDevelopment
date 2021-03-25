@@ -10,6 +10,7 @@
     <form action="backend.php">
       <div>My Name: <input name="naming" /></div>
       <br />
+
       <label for="name">Name</label>
       <div><input type="text" name="myname" id="name" /></div>
       <br />
@@ -26,20 +27,20 @@
         Are you Eligible? <input type="checkbox" name="select" id="" checked />
       </div>
       <div>
-        Gender: Male <input type="radio" name="myradio" id="" checked /> Female
+        Gender: Male <input type="radio" name="myradio" id="" /> Female
         <input type="radio" name="myradio" id="" /> Others
-        <input type="radio" name="myradio" id="" />
+        <input type="radio" name="myradio" id="" checked />
       </div>
       <div>
         Description:<br />
-        <textarea name="mytext" col="50" rows="10"></textarea>
+        <textarea name="mytext" col="40" rows="10"></textarea>
       </div>
       <div>
         <div>
           <label for="car">Car Model</label>
           <select name="mycar" id="car">
-            <option value="ind">Indica</option>
-            <option value="hyn" selected>Hundya</option>
+            <option value="ind" checked>Indica</option>
+            <option value="hyn">Hundya</option>
             <option value="sft">Swift</option>
           </select>
         </div>
