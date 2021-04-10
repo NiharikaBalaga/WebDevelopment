@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radiobuttons</title>
+    <script>
+function fn1(){
+ var x=document.getElementById("rd1");
+ var y=document.getElementById("rd2").value;
+
+ if(rd1.checked==true){
+     alert("the channel selected id "+x.value);
+ }
+ else{
+    alert("the channel selected id "+y);
+ }
+}
+    </script>
+</head>
+<body>
+    <input id="rd1"name="md"type ="radio" value="Simple1">Simple</input>
+    <br>
+    <input id="rd2"name="md" type ="radio" value="Hard1">Hard</input>
+    <br>
+    <button onclick="fn1()">Click me</button>
+</body>
+</html>
