@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RegexEmail</title>
+</html>
+<script>
+    function validate(){
+        
+            var username=document.getElementById("name").value;
+            
+            //var regx =/^([a-zA-Z0-9\.-]+)@([a-zA-Z0-9-]+).([a-z]{2,20})$/;
+           // var regx1=/^()@().().()$/
+            //neha22oct97@gmail.com
+           // var regx =/^([a-zA-Z0-9\.-]+)@([a-zA-Z0-9-]+).([a-z]{2,20}).([a-z]{2,10})$/;      
+            //neha11@gmail.co.in
+            
+
+            if(regx.test(username)){
+               document.getElementById("lb").innerHTML="Valid"
+               document.getElementById("lb").style.visibility="visible"
+               document.getElementById("lb").style.color="green"
+               
+               
+            }
+            else{
+                document.getElementById("lb").innerHTML="Invalid"
+                document.getElementById("lb").style.visibility="visible"
+                document.getElementById("lb").style.color="red"
+                
+            }
+        }
+       
+    
+</script>
+</head>
+<body>
+<form  >
+    <input id="name" type="text" placeholder="Username">
+    <label id="lb" style="color: red; visibility:hidden">Invalid</label>
+    <br>
+    <br>
+
+    <button onclick="validate()" type="button">Click me</button>
+    
+</form>
+
+</body>
+</html>
